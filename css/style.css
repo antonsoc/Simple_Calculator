@@ -1,0 +1,99 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#calculator {
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 270px;
+  margin: 30px 50px;
+}
+
+.screen-area {
+  background-color: #2e2e2e;
+  padding: 15px;
+}
+
+.screen-area .screen[type = 'text'] {
+  background-color: #eaeaea;
+  border: none;
+  height: 40px;
+  width: 95%;
+  
+  line-height: 40px;
+  font-size: 25px;
+  text-align: right;
+}
+
+.main-area {
+  margin: 15px;
+}
+
+.main-area .action-area * {
+  display: inline-block;
+  color: #337cac;
+}
+
+.main-area .number-area .numbers {
+  float: left;
+}
+
+.main-area .number-area .numbers * {
+  display: inline-block;
+}
+
+.main-area .number-area .numbers #ac {
+  background: #f0595f;
+  border-color: #b0353a;
+  color: #fff;
+}
+
+.main-area .number-area .numbers #ac:hover {
+  background: #f17377;
+}
+
+.main-area .number-area .result {
+  float: left;
+}
+
+.main-area .number-area #calculate {
+  height: 201px;
+  background: #2e86c0;
+  border-color: #337cac;
+  color: #fff;
+  line-height: 201px;
+  margin-right: 0;
+}
+
+.main-area .number-area #calculate:hover {
+  background: #4e9ed4;
+}
+
+.button {
+  width: 50px;
+  height: 45px;
+  background: linear-gradient(#fff, #eaeaea);
+  border: 1px outset grey;
+  border-radius: 5px;
+  
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  
+  margin: 0 5px 5px 0;
+  
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #eaeaea;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
